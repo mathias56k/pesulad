@@ -2,6 +2,8 @@ const container = document.querySelector('.container');
 const toggleButton = document.querySelector('#sidebar-toggle');
 const toggleIcon = document.querySelector('.toggle-icon');
 
+let key = config.MAPBOX_KEY;
+
 toggleButton.addEventListener('click', function () {
     container.classList.toggle('active');
     toggleButton.classList.toggle('active');
@@ -12,7 +14,7 @@ toggleButton.addEventListener('click', function () {
     }
 });
 
-mapboxgl.accessToken = 'ACCESS_CODE';
+mapboxgl.accessToken = key;
 const map = new mapboxgl.Map({
 container: 'map', // container ID
 // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
