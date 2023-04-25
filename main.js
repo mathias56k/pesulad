@@ -2,7 +2,7 @@ const container = document.querySelector('.container');
 const toggleButton = document.querySelector('#sidebar-toggle');
 const toggleIcon = document.querySelector('.toggle-icon');
 
-let key = config.MAPBOX_KEY;
+let key = process.env.MAPBOX_KEY;
 
 toggleButton.addEventListener('click', function () {
     container.classList.toggle('active');
