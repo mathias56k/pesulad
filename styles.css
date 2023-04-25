@@ -1,0 +1,88 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #afafaf;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar > :first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar > :not(:first-child) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container.active .sidebar {
+    transform: translateX(0);
+}
+
+#sidebar-toggle {
+    background-color: transparent;
+    color: #afafaf;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    transition: transform 0.3s ease-in-out, left 0.3s ease-in-out;
+    z-index: 2;
+    font-size: 2em;
+}
+
+#sidebar-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.container.active #sidebar-toggle {
+    left: 20%;
+}
+
+#sidebar-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#sidebar-close .toggle-icon {
+    font-size: 24px;
+}
+
+#map {
+    flex-grow: 1;
+    height: 100vh;
+    background-color: #afafaf;
+    margin-left: 0;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.container.active #map {
+    margin-left: 20%;
+}
