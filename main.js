@@ -2,8 +2,6 @@ const container = document.querySelector('.container');
 const toggleButton = document.querySelector('#sidebar-toggle');
 const toggleIcon = document.querySelector('.toggle-icon');
 
-let key = process.env.MAPBOX_KEY;
-
 toggleButton.addEventListener('click', function () {
     container.classList.toggle('active');
     toggleButton.classList.toggle('active');
@@ -14,10 +12,9 @@ toggleButton.addEventListener('click', function () {
     }
 });
 
-mapboxgl.accessToken = key;
+mapboxgl.accessToken = 'ACCESS_KEY_HERE';
 const map = new mapboxgl.Map({
 container: 'map', // container ID
-// Choose from Mapbox's core styles, or make your own style with Mapbox Studio
 style: 'mapbox://styles/mathias56k/clgwdvk4100a801pnbw10804o', // style URL
 center: [-74.5, 40], // starting position [lng, lat]
 zoom: 9 // starting zoom
