@@ -1,0 +1,110 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "P_ID": 1,
+          "P_NIMI": "Vahi Pesula",
+          "P_HIND": "1€",
+          "P_HINNE": 4,
+          "P_KAART": "JAH"
+        },
+        "geometry": {
+          "coordinates": [
+            26.7369644872322,
+            58.3989475754847
+          ],
+          "type": "Point"
+        },
+        "id": 0
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "P_ID": 2,
+          "P_NIMI": "Tehase Pesula",
+          "P_HIND": "1€",
+          "P_HINNE": 5,
+          "P_KAART": "EI"
+        },
+        "geometry": {
+          "coordinates": [
+            26.739671948654944,
+            58.361764142708324
+          ],
+          "type": "Point"
+        },
+        "id": 1
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "P_ID": 3,
+          "P_NIMI": "Turu Pesula",
+          "P_HIND": "1€",
+          "P_HINNE": 5,
+          "P_KAART": "JAH"
+        },
+        "geometry": {
+          "coordinates": [
+            26.741934566139406,
+            58.34585820237311
+          ],
+          "type": "Point"
+        },
+        "id": 2
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "P_ID": 4,
+          "P_NIMI": "Kärcher Lõunakeskuse Pesula",
+          "P_HIND": "1€",
+          "P_HINNE": 2,
+          "P_KAART": "EI"
+        },
+        "geometry": {
+          "coordinates": [
+            26.676062832172363,
+            58.361575585148756
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "P_ID": 5,
+          "P_NIMI": "Jazz Lõunakeskuse Pesula",
+          "P_HIND": "1€",
+          "P_HINNE": 3,
+          "P_KAART": "JAH"
+        },
+        "geometry": {
+          "coordinates": [
+            26.674210536922345,
+            58.36276603696635
+          ],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "P_ID": 6,
+          "P_NIMI": "Aqua Aardla Pesula",
+          "P_HIND": "1€",
+          "P_HINNE": 1,
+          "P_KAART": "JAH"
+        },
+        "geometry": {
+          "coordinates": [
+            26.71938356085903,
+            58.35704762066186
+          ],
+          "type": "Point"
+        }
+      }
+    ]
+  }

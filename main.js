@@ -2,6 +2,10 @@ const container = document.querySelector('.container');
 const toggleButton = document.querySelector('#sidebar-toggle');
 const toggleIcon = document.querySelector('.toggle-icon');
 
+// Set Initial Center and Initial Zoom
+const INITIAL_CENTER = [25.048056, 58.804251];
+const INITIAL_ZOOM = 6.25;
+
 toggleButton.addEventListener('click', function () {
     container.classList.toggle('active');
     toggleButton.classList.toggle('active');
@@ -14,8 +18,32 @@ toggleButton.addEventListener('click', function () {
 
 mapboxgl.accessToken = 'ACCESS_KEY_HERE';
 const map = new mapboxgl.Map({
-container: 'map', // container ID
-style: 'mapbox://styles/mathias56k/clgwdvk4100a801pnbw10804o', // style URL
-center: [-74.5, 40], // starting position [lng, lat]
-zoom: 9 // starting zoom
+    container: 'map', // container ID
+    style: 'mapbox://styles/mathias56k/clgwdvk4100a801pnbw10804o', // style URL
+    center: INITIAL_CENTER, // starting position [lng, lat]
+    zoom: INITIAL_ZOOM, // starting zoom
+    projection: 'mercator'
+});
+
+map.on('load', function() {
+    map.loadImage('marker-15.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('marker-15', image);
+        
+        map.addSource('markers', {
+            type: 'geojson',
+            data: 'data/pesulad.geojson',
+        });
+
+        // Add markers to the map
+        map.addLayer({
+            id: 'markers',
+            type: 'symbol',
+            source: 'markers',
+            layout: {
+                'icon-image': 'marker-15', // choose marker icon
+                'icon-size': 0.25 // adjust marker size
+            },
+        });
+    });
 });
