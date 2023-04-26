@@ -8,7 +8,8 @@
           "P_NIMI": "Vahi Pesula",
           "P_HIND": "1€",
           "P_HINNE": 4,
-          "P_KAART": "JAH"
+          "P_KAART": "JAH",
+          "P_PILT": "pilt1.png"
         },
         "geometry": {
           "coordinates": [
