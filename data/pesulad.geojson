@@ -1,111 +1,198 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-      {
-        "type": "Feature",
-        "properties": {
-          "P_ID": 1,
-          "P_NIMI": "Vahi Pesula",
-          "P_HIND": "1€",
-          "P_HINNE": 4,
-          "P_KAART": "JAH",
-          "P_PILT": "pilt1.png"
-        },
-        "geometry": {
-          "coordinates": [
-            26.7369644872322,
-            58.3989475754847
-          ],
-          "type": "Point"
-        },
-        "id": 0
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 1,
+        "P_NAME": "Vahi Pesula",
+        "P_PRICE": "1€",
+        "P_RATING": 4,
+        "P_CASH": "Y",
+        "P_VAC": "Y",
+        "P_PIC": "images/tartu/vahi/vahi-1.png",
+        "P_CARD": "Y",
+        "P_BOXES": 2
       },
-      {
-        "type": "Feature",
-        "properties": {
-          "P_ID": 2,
-          "P_NIMI": "Tehase Pesula",
-          "P_HIND": "1€",
-          "P_HINNE": 5,
-          "P_KAART": "EI"
-        },
-        "geometry": {
-          "coordinates": [
-            26.739671948654944,
-            58.361764142708324
-          ],
-          "type": "Point"
-        },
-        "id": 1
+      "geometry": {
+        "coordinates": [
+          26.7369644872322,
+          58.3989475754847
+        ],
+        "type": "Point"
       },
-      {
-        "type": "Feature",
-        "properties": {
-          "P_ID": 3,
-          "P_NIMI": "Turu Pesula",
-          "P_HIND": "1€",
-          "P_HINNE": 5,
-          "P_KAART": "JAH"
-        },
-        "geometry": {
-          "coordinates": [
-            26.741934566139406,
-            58.34585820237311
-          ],
-          "type": "Point"
-        },
-        "id": 2
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 2,
+        "P_NAME": "Tehase Pesula",
+        "P_PRICE": "1.5€",
+        "P_PIC": "images/tartu/tehase/tehase-1.png",
+        "P_RATING": 2,
+        "P_CASH": "Y",
+        "P_VAC": "N",
+        "P_CARD": "Y",
+        "P_BOXES": 3
       },
-      {
-        "type": "Feature",
-        "properties": {
-          "P_ID": 4,
-          "P_NIMI": "Kärcher Lõunakeskuse Pesula",
-          "P_HIND": "1€",
-          "P_HINNE": 2,
-          "P_KAART": "EI"
-        },
-        "geometry": {
-          "coordinates": [
-            26.676062832172363,
-            58.361575585148756
-          ],
-          "type": "Point"
-        }
+      "geometry": {
+        "coordinates": [
+          26.739671948654944,
+          58.361764142708324
+        ],
+        "type": "Point"
       },
-      {
-        "type": "Feature",
-        "properties": {
-          "P_ID": 5,
-          "P_NIMI": "Jazz Lõunakeskuse Pesula",
-          "P_HIND": "1€",
-          "P_HINNE": 3,
-          "P_KAART": "JAH"
-        },
-        "geometry": {
-          "coordinates": [
-            26.674210536922345,
-            58.36276603696635
-          ],
-          "type": "Point"
-        }
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 3,
+        "P_NAME": "Turu Pesula",
+        "P_PRICE": "2€",
+        "P_PIC": "images/tartu/turu/turu-1.png",
+        "P_RATING": 3,
+        "P_CASH": "N",
+        "P_VAC": "N",
+        "P_CARD": "Y",
+        "P_BOXES": 5
       },
-      {
-        "type": "Feature",
-        "properties": {
-          "P_ID": 6,
-          "P_NIMI": "Aqua Aardla Pesula",
-          "P_HIND": "1€",
-          "P_HINNE": 1,
-          "P_KAART": "JAH"
-        },
-        "geometry": {
-          "coordinates": [
-            26.71938356085903,
-            58.35704762066186
-          ],
-          "type": "Point"
-        }
+      "geometry": {
+        "coordinates": [
+          26.741934566139406,
+          58.34585820237311
+        ],
+        "type": "Point"
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 4,
+        "P_NAME": "Kärcher Lõunakeskuse Pesula",
+        "P_PRICE": "5€",
+        "P_PIC": "images/tartu/karcher/karcher-1.png",
+        "P_RATING": 4,
+        "P_CASH": "Y",
+        "P_VAC": "N",
+        "P_CARD": "N",
+        "P_BOXES": 7
+      },
+      "geometry": {
+        "coordinates": [
+          26.676062832172363,
+          58.361575585148756
+        ],
+        "type": "Point"
       }
-    ]
-  }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 5,
+        "P_NAME": "Jazz Lõunakeskuse Pesula",
+        "P_PRICE": "1.25€",
+        "P_PIC": "images/tartu/jazz/jazz-1.png",
+        "P_RATING": 1,
+        "P_CASH": "Z",
+        "P_VAC": "Y",
+        "P_CARD": "Z",
+        "P_BOXES": 4
+      },
+      "geometry": {
+        "coordinates": [
+          26.674210536922345,
+          58.36276603696635
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 6,
+        "P_NAME": "Aqua Aardla Pesula",
+        "P_PRICE": "2€",
+        "P_PIC": "images/tartu/aardla/aardla-1.png",
+        "P_RATING": 5,
+        "P_CASH": "N",
+        "P_VAC": "Y",
+        "P_CARD": "Y",
+        "P_BOXES": 1
+      },
+      "geometry": {
+        "coordinates": [
+          26.71938356085903,
+          58.35704762066186
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 7,
+        "P_NAME": "Olerex Võru Pesula",
+        "P_PRICE": "1€",
+        "P_RATING": 2,
+        "P_CASH": "Y",
+        "P_VAC": "N",
+        "P_PIC": "images/voru/olerex/olerex-1.png",
+        "P_CARD": "N",
+        "P_BOXES": 2
+      },
+      "geometry": {
+        "coordinates": [
+          26.976259034279536,
+          57.858575467413914
+        ],
+        "type": "Point"
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 8,
+        "P_NAME": "Kagukeskuse Pesula",
+        "P_PRICE": "1.5€",
+        "P_RATING": 4,
+        "P_CASH": "Y",
+        "P_VAC": "N",
+        "P_PIC": "images/voru/kaguk/kaguk-1.png",
+        "P_CARD": "Y",
+        "P_BOXES": 8
+      },
+      "geometry": {
+        "coordinates": [
+          27.005494217361843,
+          57.847369472016965
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "P_ID": 9,
+        "P_NAME": "Aqua Võru Pesula",
+        "P_PRICE": "2€",
+        "P_RATING": 3,
+        "P_CASH": "Y",
+        "P_VAC": "Y",
+        "P_PIC": "images/voru/aqua/aqua-1.png",
+        "P_CARD": "Y",
+        "P_BOXES": 6
+      },
+      "geometry": {
+        "coordinates": [
+          27.003356113602734,
+          57.85135381142493
+        ],
+        "type": "Point"
+      }
+    }
+  ]
+}

@@ -2,6 +2,7 @@ html,
 body {
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -88,13 +89,54 @@ body {
 }
 
 /* Popup styling */
-img {
+.main-picture {
     display: flex;
     max-width: 200px;
     max-height: 300px;
-    margin: 10px
+    margin: 10px;
+    border-radius: 2.5%;
 }
 
 .popup {
-    padding-bottom: 20px;
+    padding: 20px 15px;
 }
+
+.svg {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.pics {
+    display: flex;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/**/
+  
+.boxes .boxes-info {
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    left: -100px;
+    bottom: 10em;
+    z-index: 1;
+    margin-left: -60px;
+    background-color:white;
+    transition: opacity 1s;
+
+  }
+  
+.boxes:hover .boxes-info {
+    visibility: visible;
+    opacity: 1;
+  }
