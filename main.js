@@ -66,6 +66,7 @@ map.on('click', 'markers', function (e) {
                       <img class="svg" src="images/main/boxes/boxes-${feature.properties.P_BOXES.toString().padStart(2, '0')}.svg">
                       <p class="boxes-info">Selles pesulas on ${feature.properties.P_BOXES} boksi</p>
                       </div>
+                      <img class="svg" src="images/main/modes/modes-${feature.properties.P_MODES.toString().padStart(2, '')}.svg">
                       ${vacIcon}
                       </div>
                       <hr>

@@ -12,7 +12,8 @@
         "P_VAC": "Y",
         "P_PIC": "images/tartu/vahi/vahi-1.png",
         "P_CARD": "Y",
-        "P_BOXES": 2
+        "P_BOXES": 2,
+        "P_MODES": 6
       },
       "geometry": {
         "coordinates": [
@@ -34,7 +35,8 @@
         "P_CASH": "Y",
         "P_VAC": "N",
         "P_CARD": "Y",
-        "P_BOXES": 3
+        "P_BOXES": 3,
+        "P_MODES": 5
       },
       "geometry": {
         "coordinates": [
@@ -56,7 +58,8 @@
         "P_CASH": "N",
         "P_VAC": "N",
         "P_CARD": "Y",
-        "P_BOXES": 5
+        "P_BOXES": 5,
+        "P_MODES": 6
       },
       "geometry": {
         "coordinates": [
@@ -78,7 +81,8 @@
         "P_CASH": "Y",
         "P_VAC": "N",
         "P_CARD": "N",
-        "P_BOXES": 7
+        "P_BOXES": 7,
+        "P_MODES": 7
       },
       "geometry": {
         "coordinates": [
@@ -99,7 +103,8 @@
         "P_CASH": "Z",
         "P_VAC": "Y",
         "P_CARD": "Z",
-        "P_BOXES": 4
+        "P_BOXES": 4,
+        "P_MODES": 8
       },
       "geometry": {
         "coordinates": [
@@ -120,7 +125,8 @@
         "P_CASH": "N",
         "P_VAC": "Y",
         "P_CARD": "Y",
-        "P_BOXES": 1
+        "P_BOXES": 1,
+        "P_MODES": 9
       },
       "geometry": {
         "coordinates": [
@@ -141,7 +147,8 @@
         "P_VAC": "N",
         "P_PIC": "images/voru/olerex/olerex-1.png",
         "P_CARD": "N",
-        "P_BOXES": 2
+        "P_BOXES": 2,
+        "P_MODES": 10
       },
       "geometry": {
         "coordinates": [
@@ -163,7 +170,8 @@
         "P_VAC": "N",
         "P_PIC": "images/voru/kaguk/kaguk-1.png",
         "P_CARD": "Y",
-        "P_BOXES": 8
+        "P_BOXES": 8,
+        "P_MODES": 6
       },
       "geometry": {
         "coordinates": [
@@ -184,7 +192,8 @@
         "P_VAC": "Y",
         "P_PIC": "images/voru/aqua/aqua-1.png",
         "P_CARD": "Y",
-        "P_BOXES": 6
+        "P_BOXES": 6,
+        "P_MODES": 5
       },
       "geometry": {
         "coordinates": [
