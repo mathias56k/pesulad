@@ -119,7 +119,7 @@ h3 {
 
 /**/
   
-.boxes .boxes-info {
+.svg-with-info .svg-info {
     visibility: hidden;
     opacity: 0;
     width: 120px;
@@ -127,16 +127,14 @@ h3 {
     text-align: center;
     padding: 5px 0;
     position: absolute;
-    left: -100px;
+    left: -70px;
     bottom: 10em;
     z-index: 1;
     margin-left: -60px;
     background-color:white;
-    transition: opacity 1s;
-
   }
   
-.boxes:hover .boxes-info {
+.svg-with-info:hover .svg-info {
     visibility: visible;
     opacity: 1;
   }

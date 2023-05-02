@@ -41,7 +41,7 @@ map.on('click', 'markers', function (e) {
     let cashIcon = '<i class="fa-sharp fa-solid fa-coins" style="color: #ebebeb;"></i>';
     if (feature.properties.P_CASH === 'Y') {
         cashIcon = cashIcon = '<i class="fa-sharp fa-solid fa-coins" style="color: #669c35;"></i>';
-    } else if (feature.properties.P_CASH === 'Z') {
+    } else if (feature.properties.P_CASH === 'Z') { // Do not show any icon when payment in tokens ("Zetoonid")
         cashIcon = 'Zetoonid'
     }
 
@@ -49,25 +49,39 @@ map.on('click', 'markers', function (e) {
     let cardIcon = '<i class="fa-solid fa-credit-card" style="color: #ebebeb;"></i>';
     if (feature.properties.P_CARD === 'Y') {
         cardIcon = '<i class="fa-solid fa-credit-card" style="color: #669c35;"></i>';
-    } else if (feature.properties.P_CARD === 'Z') {
+    } else if (feature.properties.P_CARD === 'Z') { // Do not show any icon when payment in tokens ("Zetoonid")
         cardIcon = ''
     }
 
+    // Set the Vacuum icon if P_VAC is 'Y'
     let vacIcon = ''
     if (feature.properties.P_VAC === 'Y') {
         vacIcon = '<img class="svg" src="images/main/vac/VAC.svg">';
     }
 
+    // Set the exchange icon if P_EXC is 'Y'
+    let excIcon = ''
+    if (feature.properties.P_EXC === 'Y') {
+        excIcon = '<img class="svg" src="images/main/exchange.svg">';
+    }
+    
     // Popup HTML
     const popupContent = `<img class="main-picture" src="${feature.properties.P_PIC}">
                       <h3>${feature.properties.P_NAME}</h3>
                       <div class="pics">
-                      <div class="boxes">
+                      <div class="svg-with-info">
                       <img class="svg" src="images/main/boxes/boxes-${feature.properties.P_BOXES.toString().padStart(2, '0')}.svg">
-                      <p class="boxes-info">Selles pesulas on ${feature.properties.P_BOXES} boksi</p>
+                      <p class="svg-info">Selles pesulas on ${feature.properties.P_BOXES} boksi</p>
                       </div>
                       <img class="svg" src="images/main/modes/modes-${feature.properties.P_MODES.toString().padStart(2, '')}.svg">
+                      <div class="svg-with-info">
                       ${vacIcon}
+                      <p class="svg-info">Selles pesulas on tolmuimeja(d)</p>
+                      </div>
+                      <div class="svg-with-info">
+                      ${excIcon}
+                      <p class="svg-info">Selles pesulas on võimalik raha vahetada</p>
+                      </div>
                       </div>
                       <hr>
                       <p><strong>Hinne:</strong> ${stars}</p>
