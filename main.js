@@ -40,7 +40,7 @@ map.on('click', 'markers', function (e) {
     // Set Default Cash Icon & if P_CASH is Y change the icon
     let cashIcon = '<i class="fa-sharp fa-solid fa-coins" style="color: #ebebeb;"></i>';
     if (feature.properties.P_CASH === 'Y') {
-        cashIcon = cashIcon = '<i class="fa-sharp fa-solid fa-coins" style="color: #669c35;"></i>';
+        cashIcon = cashIcon = '<i class="fa-sharp fa-solid fa-coins" style="color: #5BBA6F;"></i>';
     } else if (feature.properties.P_CASH === 'Z') { // Do not show any icon when payment in tokens ("Zetoonid")
         cashIcon = 'Zetoonid'
     }
@@ -48,7 +48,7 @@ map.on('click', 'markers', function (e) {
     // Set Default Card Icon & if P_CARD is Y change the icon
     let cardIcon = '<i class="fa-solid fa-credit-card" style="color: #ebebeb;"></i>';
     if (feature.properties.P_CARD === 'Y') {
-        cardIcon = '<i class="fa-solid fa-credit-card" style="color: #669c35;"></i>';
+        cardIcon = '<i class="fa-solid fa-credit-card" style="color: #5BBA6F;"></i>';
     } else if (feature.properties.P_CARD === 'Z') { // Do not show any icon when payment in tokens ("Zetoonid")
         cardIcon = ''
     }
@@ -89,16 +89,16 @@ map.on('click', 'markers', function (e) {
                       <p><strong>Maksmine:</strong> ${cashIcon} ${cardIcon}</p>`;
 
 
-    const popup = new mapboxgl.Popup({ className: "popup", closeButton: false })
+    const popup = new mapboxgl.Popup({ className: "popup", closeButton: false})
         .setLngLat(feature.geometry.coordinates)
         .setHTML(popupContent)
         .addTo(map);
 })
 
 map.on('load', function () {
-    map.loadImage('marker-15.png', function (error, image) {
+    map.loadImage('marker-1.png', function (error, image) {
         if (error) throw error;
-        map.addImage('marker-15', image);
+        map.addImage('marker-1', image);
 
         map.addSource('markers', {
             type: 'geojson',
@@ -111,10 +111,9 @@ map.on('load', function () {
             type: 'symbol',
             source: 'markers',
             layout: {
-                'icon-image': 'marker-15', // choose marker icon
-                'icon-size': 0.25, // adjust marker size
-                'icon-allow-overlap': true,
-
+                'icon-image': 'marker-1', // choose marker icon
+                'icon-size': 0.05, // adjust marker size
+                'icon-allow-overlap': true
             },
         });
     });
